@@ -18,14 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this,SecondActivity.class);
 
-        EditText name = findViewById(R.id.name);
-        EditText age = findViewById(R.id.age);
+
         Button send = findViewById(R.id.send);
 
-        String a = age.getText().toString();
-        String n = name.getText().toString();
 
-        User user = new User(n,a);
+
+        User user = new User("Ali",34);
 
         send.setOnClickListener(view -> {
             intent.putExtra("user",user);

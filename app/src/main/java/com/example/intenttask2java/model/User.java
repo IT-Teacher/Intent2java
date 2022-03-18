@@ -5,10 +5,10 @@ import androidx.annotation.NonNull;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    String age;
+    int age;
     String name;
 
-    public User( String name,String age) {
+    public User( String name,int age) {
         this.age = age;
         this.name = name;
     }
